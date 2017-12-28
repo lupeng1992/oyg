@@ -23,6 +23,8 @@
         <property name="testOnBorrow" value="true" />
     </bean>
 
+
+
     <!-- Spring-redis连接池管理工厂 -->
     <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
         <!-- IP地址 -->
@@ -70,7 +72,6 @@
         <property name="hashKeySerializer">
             <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />
         </property>
-
     </bean>
 
     <!--自定义redis工具类,在需要缓存的地方注入此类  -->
