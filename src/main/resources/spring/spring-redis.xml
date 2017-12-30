@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
     http://www.springframework.org/schema/context
@@ -62,7 +63,7 @@
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
         <property name="connectionFactory" ref="jedisConnectionFactory" />
         <property name="defaultSerializer">
-            <bean class="org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer"></bean>
+            <bean class="org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer"/>
         </property>
         <property name="keySerializer">
             <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />

@@ -1,7 +1,5 @@
 package com.oyg.test;
 
-import com.oyg.entity.User;
-
 /**
  * Created by Administrator on 2017/12/19.
  */
